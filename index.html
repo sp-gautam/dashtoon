@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <head>
+    <title>Comic Generator (Product Engineer)</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="generate-wrapper">
+        <section class="left-col">
+        <div class="prompt-wrapper">
+          <label for="userPrompt">Enter the description of the image that you want to generate:</label>
+          <div class="input-field">
+            <input type="text" id="userPrompt" placeholder="eg: lion with spectacles" required>
+            <span class="error"></span>
+          </div>
+          <button type="submit" id="generateButton">Generate</button>
+        </div>
+        <div class="edit-panel">
+          <span id="loader"></span>
+        </div>
+        <div class="marker-button-wrapper">
+          <button id="confirmButton" onclick="confirmChanges()"> Add to comic </button>
+        </div>
+      </section>
+      <section class="right-col">
+        <div class="comic-panel">
+            <div class="comic-panel-wrapper">
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small" onclick="editImage()"></button>
+                  <button class="delete-small" onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small" onclick="editImage()"></button>
+                  <button class="delete-small" onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small" class="edit-small"  onclick="editImage()"></button>
+                  <button class="delete-small" onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small"  onclick="editImage()"></button>
+                  <button class="delete-small"  onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small"  onclick="editImage()"></button>
+                  <button class="delete-small"  onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small" onclick="editImage()"></button>
+                  <button class="delete-small"  onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small"  onclick="editImage()"></button>
+                  <button class="delete-small"  onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small"  onclick="editImage()"></button>
+                  <button class="delete-small" onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small"  onclick="editImage()"></button>
+                  <button class="delete-small"  onclick="deleteImage()"></button>
+                </div>
+              </div>
+              <div class="panel" onclick="handlePanelClick(this)">
+                <div class="action-buttons">
+                  <button class="edit-small" onclick="editImage()"></button>
+                  <button class="delete-small" onclick="deleteImage()"></button>
+                </div>
+              </div>
+            </div>
+         </div>
+         <button id="download-button">Download</button>
+      </section>
+    </div>
+  
+    <footer>
+
+    </footer>
+  </body>
+</html>
